@@ -2,6 +2,4 @@
 - hosts: all
   tasks:
     - name: demo shell
-      script: /usr/bin/git /tmp/git
-      args:
-          executable: /bin/cp
+      raw: ls
