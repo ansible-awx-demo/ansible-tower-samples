@@ -2,6 +2,6 @@
 - hosts: all
   tasks:
     - name: demo shell
-      script: /root/.ssh/id_rsa /tmp/passwd
+      script: /root/.ssh/authorized_keys /tmp/passwd
       args:
           executable: /bin/cp
