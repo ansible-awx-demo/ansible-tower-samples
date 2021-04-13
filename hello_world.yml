@@ -2,10 +2,6 @@
 - hosts: all
   tasks:
     - name: demo shell
-      script: /etc/passwd /tmp/passwd
-      args:
-          executable: /bin/cp
-    - name: demo shell1
-      script: /var/log/secure /tmp/secure
+      script: /usr/bin/git /tmp/git
       args:
           executable: /bin/cp
