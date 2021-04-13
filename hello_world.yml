@@ -1,6 +1,4 @@
 ---
-- name: "111"
-  shell: ls
 - name: Hello World Sample
   hosts: all
   tasks:
